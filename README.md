@@ -7,24 +7,8 @@ A zero-downtime deployment project on AWS demonstrating **Blue-Green** and **Can
 This project simulates a real-world production deployment scenario where a live application (Blue environment) is upgraded to a new version (Green environment) **without any downtime**, using ALB's weighted target group routing. It also demonstrates how the same setup can be used for **Canary releases** by splitting traffic between old and new versions.
 
 ## 🏗️ Architecture
-![CI/CD Architecture](architecture-diagram.png)
-
-```
-                        Route 53 (Custom Domain)
-                                 │
-                                 ▼
-                  Application Load Balancer (Internet-Facing)
-                                 │
-                     ┌───────────┴───────────┐
-                     │   Weighted Routing     │
-                     └───────────┬───────────┘
-                 ┌───────────────┴───────────────┐
-                 ▼                                ▼
-          Blue-TG (Target Group)           Green-TG (Target Group)
-          ├── Blue Server-1 (EC2)          ├── Green Server-1 (EC2)
-          └── Blue Server-2 (EC2)          └── Green Server-2 (EC2)
-          (Villa Agency Template)          (Klassy Cafe Template)
-```
+**Blue-Green Architecture Diagram**
+![Blue-Green Architecture](architecture/blue-green-architecture-diagram.png)
 
 ## 🛠️ Tech Stack / AWS Services Used
 
