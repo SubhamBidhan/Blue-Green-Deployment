@@ -79,29 +79,20 @@ Load Balancer → Listeners and rules → select HTTP rule → Manage rule → E
 ```
 aws-blue-green-deployment/
 ├── README.md
-├── architecture-diagram.png
+├── architecture
+|   ├── blue-green-architecture-diagram.png
 ├── scripts/
 │   ├── blue-server-userdata.sh
 │   └── green-server-userdata.sh
 ├── screenshots/
-│   ├── 01-blue-tg-created.png
-│   ├── 02-alb-blue-only.png
-│   ├── 03-green-tg-created.png
-│   ├── 04-listener-rule-weighted.png
-│   ├── 05-blue-green-cutover.png
-│   ├── 06-canary-50-50.png
-│   └── 07-route53-records.png
-└── docs/
-    └── deployment-notes.md
-```
+    ├── 01-blue-tg-created.png
+    ├── 02-alb-blue-only.png
+    ├── 03-version-one-deploy.png
+    ├── 04-green-tg-created.png
+    ├── 05-listener-rule-weighted.png
+    └── 06-version-two-deploy.png
 
-## 📸 What to Include in the Repo
-- **README.md** (this file) — overview, architecture, steps
-- **User data scripts** — the two `.sh` files, saved as separate files (not just pasted in README)
-- **Screenshots** — target groups, listener rule with weights, ALB DNS resolving each environment, Route 53 hosted zone/records
-- **Architecture diagram** — a simple image (draw.io / Lucidchart export) showing ALB → Blue-TG/Green-TG → EC2 instances → Route 53
-- **`.gitignore`** — to exclude any local/temp files if you add automation scripts later
-- Optionally, a short **GIF or note** showing the site switching from Villa Agency → Klassy Cafe when weights change (great for portfolio visibility)
+```
 
 ## 🔮 Possible Future Enhancements
 - Automate the whole flow with Terraform or CloudFormation
