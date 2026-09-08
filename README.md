@@ -1,6 +1,6 @@
 # AWS Blue-Green Deployment with Application Load Balancer
 
-A zero-downtime deployment project on AWS demonstrating **Blue-Green** and **Canary** deployment strategies using EC2, Application Load Balancer (ALB) weighted target groups, and Route 53 for custom domain integration.
+A zero-downtime deployment project on AWS demonstrating **Blue-Green** and **Canary** deployment strategies using EC2, Application Load Balancer (ALB) weighted target groups.
 
 ## 📌 Project Overview
 
@@ -33,7 +33,6 @@ This project simulates a real-world production deployment scenario where a live 
 | Load Balancing | Application Load Balancer (ALB) |
 | Networking | Security Groups, Target Groups |
 | DNS | Route 53 |
-| Domain Registrar | GoDaddy (nameservers delegated to Route 53) |
 | Web Server | Apache (httpd) |
 | Demo Apps | Static HTML templates (TemplateMo) |
 
