@@ -85,10 +85,10 @@ aws-blue-green-deployment/
 │   ├── blue-server-userdata.sh
 │   └── green-server-userdata.sh
 ├── screenshots/
-    ├── 01-blue-tg-created.png
+    ├── 01-blue-tg.png
     ├── 02-alb-blue-only.png
     ├── 03-version-one-deploy.png
-    ├── 04-green-tg-created.png
+    ├── 04-green-tg.png
     ├── 05-listener-rule-weighted.png
     └── 06-version-two-deploy.png
 
